@@ -1,0 +1,63 @@
+<!DOCTYPE html>   
+<html>   
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<title> Instacart Data Analysis prediction </title>  
+<style>   
+Body {  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-image: url(https://miro.medium.com/max/1160/1*yf7Bk7LpZCH5wcIGSxBqjA.png);
+  background-repeat: no-repeat;
+    background-attachment: fixed;
+  background-size: 100% 120%;
+
+}  
+button {   
+       background-color: #4CAF50;   
+       width: 50%;  
+        color: green;   
+        padding: 15px;   
+        margin: 10px 0px;   
+        border: none;   
+        cursor: pointer;   
+         }   
+ form {   
+    }   
+ input[type=text], {   
+        width: 100%;   
+        margin: 10px 0px;  
+        padding: 12px 20px;   
+        display: inline-block;   
+        border: 2px solid green;   
+        box-sizing: border-box;   
+        background-image :url(https://miro.medium.com/max/1160/1*yf7Bk7LpZCH5wcIGSxBqjA.png);
+    }  
+ button:hover {   
+        opacity: 0;   
+    }   
+  .cancelbtn {   
+        width: auto;   
+        padding: 100px 18px;  
+        margin: 10px 5px;  
+    }   
+        
+     
+ .container {   
+        padding: 50px;   
+    }   
+</style>   
+</head>    
+<body>    
+<div>
+
+    <center> <h1> Instacart product recomendation</h1> </center>   
+    <form action="/predict" method="POST">  
+        <div class="container">   
+            <label>User_id : </label>   
+            <input type="text" placeholder="Enter User_id" name="User_id" required >  
+
+            <button type="submit">predict</button>   
+        </div>   
+    </form>     
+</body>     
+</html>
